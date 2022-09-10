@@ -18,7 +18,6 @@
                 <li><a href="#" class="nav-link">Home</a></li>
                 <li><a href="#about" class="nav-link">About me</a></li>
                 <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#skills" class="nav-link">Skills</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
 
@@ -44,11 +43,6 @@
                     <span><b>Frontend</b></span>
                     <span>Developer</span>
                 </p>      
-                <!-- <a href="#about" class="btn-know-me">
-                    <span class="material-symbols-outlined">
-                        keyboard_double_arrow_down
-                    </span>
-                </a>   -->
             </div>
 
         </section>
@@ -80,6 +74,14 @@
                     <p>
                         Por supuesto, siempre dispuesta a seguir APRENDIENDO y apostando al trabajo responsable y colaborativo.
                     </p>
+
+                    <div>
+                        <p>Skills</p>
+                        <img id="icon-skills" src="./img/react.png"/>
+                        <img id="icon-skills" src="./img/js.png"/>
+                        <img id="icon-skills" src="./img/css-3.png"/>
+                        <img id="icon-skills" src="./img/html-5.png"/>
+                    </div>
                 </div>
     
                 <div class="about-photo">
@@ -158,25 +160,18 @@
         </section>
 
         <section id="skills">
-            <div>
-                <span>JS</span>
-                <span>CSS</span>
-                <span>HTML</span>
-                <span>REACT</span>
-            </div>
+
         </section>
 
         <section id="contact">
-            <h2>
-                Contacto
-            </h2>
+            <h2>Contacto</h2>
 
-            <p>
-                Si te gustaría tenerme en tu equipo de trabajo o si quieres que compartamos algún proyecto juntos, puedes enviarme un mensaje y con gusto responderé a la brevedad posible.
-            </p>
-
-            <form>
-                <div>
+            <div class="contact-container">
+                <p>
+                    Si te gustaría tenerme en tu equipo de trabajo o si quieres que compartamos algún proyecto juntos, puedes enviarme un mensaje y con gusto responderé a la brevedad posible.
+                </p>
+    
+                <form>
                     <label for="name">Nombre y Apellido</label>
                     <input
                         type="text"
@@ -184,28 +179,33 @@
                         placeholder="Nombre y Apellido"
                         required
                     />
-                </div>
-                <div>
                     <label for="email">Email</label>
+
                     <input
                         type="email"
                         id="email"
                         placeholder="example@email.com"
                         required
                     />
-                </div>
-                <div>
                     <label for="message">Mensaje</label>
+
                     <textarea
                         name="message"
                         id="message"
                         placeholder="Mensaje"
                     ></textarea>
-                </div>
-                <div>
-                    <button type="submit" value="submit" class="btn"/>Enviar</button>
-                    </div>
-            </form>
+
+                    <button 
+                        type="submit" 
+                        value="submit" 
+                        class="btn"
+                    />
+                        Enviar
+                    </button>
+        
+                </form>
+            </div>
+
         </section>
     </main>
 
@@ -221,11 +221,11 @@
     </div> -->
         
     <footer>
-        <a href="/">
-            <img src="/" alt="Github"/>
+        <a href="https://github.com/glorialunar">
+            <img id="icon-footer" src="./img/github.png" alt="Github"/>
         </a>
-        <a href="/">
-            <img src="/" alt="LinkedIn"/>
+        <a href="https://www.linkedin.com/in/glunar/">
+            <img id="icon-footer" src="./img/linkedin.png" alt="LinkedIn"/>
         </a>
     </footer>
 </body>

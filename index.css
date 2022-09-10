@@ -304,7 +304,6 @@ html {
 /* Projects */
 
 #projects{
-    min-height: 100vh;
     padding: 1rem;
 }
 
@@ -317,7 +316,6 @@ html {
 .projects-container{
     display: flex;
     flex-direction: column;
-    height: 80vh;
     align-items: center;
     padding: 0 1.5rem;
 }
@@ -358,8 +356,96 @@ html {
     margin-top: 2rem;
 }
 
-/* Animaciones */
+/* Skills */
 
+#skills{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3rem;
+}
+
+/* Contact */
+
+#contact{
+    min-height: 80vh;
+    padding: 1rem;
+}
+
+#contact h2{
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.contact-container{
+    display: flex;
+    flex-direction: column;
+    width: 75vw;
+    margin: 0 auto;
+}
+
+.contact-container p{
+    margin-bottom: 2rem;
+}
+
+.contact-container form{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    background-color: var(--p-dark-color);
+    padding: 1rem;
+    color: var(--text-primary-color);
+    border-radius: 0.5rem;
+}
+
+.contact-container label,
+.contact-container input,
+.contact-container textarea{
+    margin-bottom: 1rem;
+}
+
+.contact-container input{
+    height: 2rem;
+    padding-left: 0.5rem;
+    border-radius: 0.2rem;
+    border: none;
+}
+
+.contact-container textarea{
+    height: 5rem;
+    padding: 0.5rem;
+}
+
+.contact-container button{
+    width: 5rem;
+    height: 2rem;
+    border-radius: 1rem;
+    border: none;
+    align-self: center;
+    background-color: var(--s-dark-color);
+    color: var(--text-primary-color);
+    font-weight: bold;
+}
+
+footer{
+    background-color: var(--s-dark-color);
+    height: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer a{
+    margin: 1rem;
+}
+
+#icon-skills,
+#icon-footer{
+    width: 3rem;
+}
+
+/* Animaciones */
 
 @keyframes animate {
     10% {
