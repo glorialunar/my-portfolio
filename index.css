@@ -227,22 +227,21 @@ html {
     background-color: var(--s-dark-color);
     border-radius: 50%;
     content: url(./img/sayHi.png);
-    height: 300px;
+    height: 500px;
     left: -50px;
     position: absolute;
     top: 40px;
     transition: 0.5s;
-    width: 300px;
+    width: 500px;
     z-index: -2;
 }
 
 
 .home-info{
+    align-items: flex-end;
     display: flex;
     flex-direction: column;
     width: auto;
-    align-items: flex-end;
-
 }
 
 .home-info h1:first-child{
@@ -259,18 +258,50 @@ html {
 }
 
 .btn-know-me{
-    color: var(--text-primary-color);
-    height: 2rem;
-    width: 2rem;
-    border-radius: 10px;
+    align-items: center;
+    align-self: center;
+    animation: animationBtn 4s infinite alternate-reverse forwards ease-in-out;
     background-color: #cb9ca1;
+    border-radius: 10px;
+    color: var(--text-primary-color);
     display: flex;
+    height: 2rem;
+    justify-content: center;
+    margin-top: 0.5rem;
+    width: 2rem;
+}
+
+/* About Me */
+#about{
+    min-height: 100vh;
+    padding: 1rem;
+}
+
+#about h2{
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.about-container{
+    display: flex;
+    height: 80vh;
     justify-content: center;
     align-items: center;
-    animation: animationBtn 4s infinite alternate-reverse forwards ease-in-out;
-    align-self: center;
-    margin-top: 0.5rem;
+    padding: 0 1.5rem;
 }
+
+.about-info p{
+    padding: 1.5rem;
+    font-size: 1.2rem;
+}
+
+.about-photo img{
+    width: 35vw;
+    border-radius: 50%;
+}
+
+/* Animaciones */
 
 
 @keyframes animate {
