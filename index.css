@@ -301,6 +301,19 @@ html {
     border-radius: 50%;
 }
 
+.about-skills{
+    text-align: center;
+}
+
+.about-skills p{
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.about-skills img{
+    margin: 1rem;
+}
+
 /* Projects */
 
 #projects{
