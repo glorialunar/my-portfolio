@@ -301,6 +301,63 @@ html {
     border-radius: 50%;
 }
 
+/* Projects */
+
+#projects{
+    min-height: 100vh;
+    padding: 1rem;
+}
+
+#projects h2{
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.projects-container{
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    align-items: center;
+    padding: 0 1.5rem;
+}
+
+.projects-container article{
+    width: 75vw;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.projects-container img{
+    width: 50%;
+}
+
+.project{
+    padding-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.project h3{
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+
+#icon{
+    width: 20px;
+}
+
+.project-links{
+    width: 15%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
 /* Animaciones */
 
 
