@@ -168,25 +168,62 @@
                 <p>
                     Si te gustaría tenerme en tu equipo de trabajo o si quieres que compartamos algún proyecto juntos, puedes enviarme un mensaje y con gusto responderé a la brevedad posible.
                 </p>
+
+                <form
+                    action="https://formspree.io/f/xaykqvbn"
+                    method="POST"
+                    class="form"
+                >
+                    <label>
+                        Nombre y Apellido
+                        <input
+                            type="text"
+                            id="name"
+                            placeholder="Nombre y Apellido"
+                            required
+                        />
+                    </label>
+                    
+
+                    <label>
+                        Email:
+                        <input 
+                            type="email"
+                            name="email"
+                            placeholder="Tu email"
+                        />
+                    </label>
+
+                    <label>
+                        Mensaje:
+                        <textarea name="message"></textarea>
+                    </label>
+
+                    <button type="submit">
+                        Enviar
+                    </button>
+                </form>
     
-                <form>
-                    <label for="name">Nombre y Apellido</label>
+                <!-- <form>
+                    <label for="name">
+                        Nombre y Apellido
+                    </label>
                     <input
                         type="text"
                         id="name"
                         placeholder="Nombre y Apellido"
                         required
                     />
-                    <label for="email">Email</label>
 
+                    <label for="email">Email</label>
                     <input
                         type="email"
                         id="email"
                         placeholder="example@email.com"
                         required
                     />
-                    <label for="message">Mensaje</label>
 
+                    <label for="message">Mensaje</label>
                     <textarea
                         name="message"
                         id="message"
@@ -201,7 +238,7 @@
                         Enviar
                     </button>
         
-                </form>
+                </form> -->
             </div>
 
         </section>
