@@ -10,7 +10,7 @@
 :root {
     /* Light Mode */
     --primary-color: #161616;
-    --p-light-color: #3c3c3c80;
+    --p-light-color: #3c3c3c;
     --p-dark-color: #000000;
     --secondary-color: #FFCDD2;
     --s-light-color: #fff;
@@ -161,12 +161,6 @@ html {
     top: 0;
     width: 100%;
     z-index: 200;
-    /* box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3),
-        0 2px 6px 2px rgba(60, 64, 67, 0.15); */
-}
-
-.nav-menu ul{
-    display: flex;
 }
 
 .nav-menu h1{
@@ -174,7 +168,11 @@ html {
     font-size: 2rem;
 }
 
-.nav-menu ul li a{
+.nav-menu-links{
+    display: flex;
+}
+
+.nav-menu-links a{
     align-items: center;
     color: var(--text-primary-color);
     display: flex;
@@ -185,7 +183,7 @@ html {
 }
 
 
-.nav-menu ul li a:hover{
+.nav-menu-links a:hover{
     color: var(--s-dark-color);
 }
 
@@ -222,7 +220,7 @@ html {
     justify-content: flex-end;
     height: 100%;
     position: relative;
-    margin-right: 2rem;
+    margin-right: 8rem;
 }
 
 .my-sticker{
@@ -358,6 +356,12 @@ html {
 
 .projects-container img{
     width: 50%;
+    border-radius: 15px;
+    box-shadow:  5px 5px 15px var(--s-dark-color);
+}
+
+.projects-container img:hover{
+    opacity: 80%;
 }
 
 .project{
@@ -376,6 +380,12 @@ html {
 
 #icon{
     width: 20px;
+    box-shadow: none;
+    transition: all 0.8s ease-in-out;
+}
+
+#icon:hover{
+    width: 30px;
 }
 
 .project-links{
@@ -459,7 +469,9 @@ html {
     align-self: center;
     color: var(--p-dark-color);
     font-weight: bold;
-  }
+    transition: all 0.8s ease-in-out; 
+    cursor: pointer; 
+}
 
   .btn-send span {
     position: relative;
@@ -561,7 +573,16 @@ footer a{
 #icon-skills,
 #icon-footer{
     width: 3rem;
+    transition: all 0.8s ease-in-out; 
 }
+
+#icon-footer:hover{
+    width: 3.5rem;
+}
+
+
+
+
 
 /* Animaciones */
 
@@ -601,5 +622,132 @@ footer a{
   
     100% {
       transform: translateY(0);
+    }
+  }
+
+  /* Responsive */
+
+  @media(max-width: 960px){
+    .nav-menu{
+        padding-right: 2rem;
+    }
+
+    .nav-menu-links{
+        position: fixed;
+        right: -100%;
+        top: 0;
+        flex-direction: column;
+        width: 30%;
+        height: 100%;
+        transition: 0.3s;
+        background-color: var(--p-light-color)
+    }
+    
+    .nav-menu-links li:first-child {
+        margin-top: 4rem;
+    }
+    
+    .nav-menu-links.active {
+        right: 0;
+    }
+
+    .nav-items {
+        width: 100%;
+        border-bottom: 1px solid var(--other-color);
+    }
+
+    .nav-items a {
+        display: inline-block;
+        width: 100%;
+        font-weight: bold;
+    }
+
+    .burger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .burger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .burger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .burger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }    
+
+    #about{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-info p,
+    .project p,
+    .contact-container p{
+        font-size: 0.8rem;
+    }
+
+    .about-info p{
+        
+        padding: 0.5rem 0;
+    }
+
+    .about-container{
+        flex-direction: column;
+        height: auto;
+    }
+
+    .about-photo{
+        order: -1;
+        margin-bottom: 1rem;
+    }
+
+
+    .projects-container article{
+        flex-direction: column;
+        padding: 0;
+        border-radius: 5%;
+    }
+
+    .projects-container img, 
+    .project{
+        width: 100%;
+        margin: 0.5rem auto;
+        padding-left: 0;
+    }
+
+    .project h3{
+        font-size: 1.2rem;
+    }
+
+  }
+
+  @media(max-width: 850px){
+    .my-sticker{
+        width: 80vw;
+        height: auto;
+    }
+
+    .home-section{
+        align-items: flex-end;
+        margin-right: 0;
+        justify-content: center;
+    }
+
+    .home-info{
+        align-items: flex-start;
+    }
+
+    .home-info p{
+        margin: 1rem 0 ;
+    }
+  }
+
+  @media(max-width: 660px){
+    .contact-container form{
+        width: 100%;
     }
   }

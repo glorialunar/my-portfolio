@@ -1,7 +1,7 @@
 // Menu hamburguesa
 
 const burger = document.querySelector(".burger");
-const navMenu = document.querySelector(".nav-menu");
+const navMenu = document.querySelector(".nav-menu-links");
 
 burger.addEventListener("click", mobileMenu);
 
