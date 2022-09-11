@@ -781,6 +781,7 @@ footer a{
 
     .home-info{
         margin-top: 5rem;
+        align-items: flex-start;
     }
   }
 
