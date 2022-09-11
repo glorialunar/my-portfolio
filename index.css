@@ -28,6 +28,7 @@ html {
 }
 
 
+
 /* Background */
 
 /* .area {
@@ -628,9 +629,17 @@ footer a{
 
   /* Responsive */
 
+  @media(max-width: 1500px){
+    .about-info p,
+    .project p,
+    .contact-container p{
+        font-size: 1rem;
+    }
+  }
+
   @media(max-width: 960px){
     .nav-menu{
-        padding-right: 2rem;
+        padding: 1.5rem 2rem;
     }
 
     .nav-menu-links{
@@ -679,6 +688,12 @@ footer a{
     .burger.active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
     }    
+
+
+    .home-section{
+        align-items: flex-end;
+        margin-right: 2rem;
+    }
 
     #about{
         display: flex;
@@ -732,23 +747,40 @@ footer a{
         height: auto;
     }
 
-    .home-section{
-        align-items: flex-end;
-        margin-right: 0;
-        justify-content: center;
-    }
-
-    .home-info{
-        align-items: flex-start;
-    }
-
     .home-info p{
         margin: 1rem 0 ;
     }
   }
 
   @media(max-width: 660px){
-    .contact-container form{
-        width: 100%;
+      .home-section{
+          justify-content: flex-end;
+          margin-left: 2rem;
+        }
+        
+        .home-info h1:first-child{
+            font-size: 3rem;
+        }
+        
+        .home-info h1:nth-child(2){
+            font-size: 1.5rem;
+        }
+        .contact-container form{
+            width: 100%;
+        }
+  }
+
+  @media(max-width:500px){
+    .nav-menu h1{
+        display: none;
+    }
+
+    .home-section{
+        align-items: center;
+    }
+
+    .home-info{
+        margin-top: 5rem;
     }
   }
+
