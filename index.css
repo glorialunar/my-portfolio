@@ -358,6 +358,7 @@ html {
     width: 50%;
     border-radius: 15px;
     box-shadow:  5px 5px 15px var(--s-dark-color);
+    transition: all 0.8s;
 }
 
 .projects-container img:hover{
