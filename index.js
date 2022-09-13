@@ -19,3 +19,5 @@ function closeMenu() {
   burger.classList.remove("active");
   navMenu.classList.remove("active");
 }
+
+
